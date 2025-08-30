@@ -70,32 +70,40 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Menu para Mobile
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const navMenu = document.querySelector('.main-nav');
+console.log("Script de menu mobile carregado.");
 
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navMenu = document.querySelector('.main-nav');
+
+// Verifica se os elementos foram encontrados
+console.log("Elemento do menu hamburguer:", hamburgerMenu);
+console.log("Elemento de navegação:", navMenu);
+
+if (hamburgerMenu && navMenu) {
     hamburgerMenu.addEventListener('click', () => {
         navMenu.classList.toggle('active');
         hamburgerMenu.classList.toggle('active');
-    });
 
-    const navLinks = document.querySelectorAll('.nav-menu li a');
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (navMenu.classList.contains('active')) {
-                navMenu.classList.remove('active');
-                hamburgerMenu.classList.remove('active');
-            }
-        });
+        // Logs para o evento de clique
+        console.log("Menu hambúrguer clicado.");
+        console.log("Classe 'active' adicionada/removida do navMenu. Estado atual:", navMenu.classList.contains('active'));
+        console.log("Classe 'active' adicionada/removida do hamburgerMenu. Estado atual:", hamburgerMenu.classList.contains('active'));
+    });
+} else {
+    console.error("Erro: Um ou mais elementos do menu não foram encontrados no DOM. Verifique as classes 'hamburger-menu' e 'main-nav' no HTML.");
+}
+
+const navLinks = document.querySelectorAll('.nav-menu li a');
+console.log("Links de navegação encontrados:", navLinks.length);
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        console.log("Link de navegação clicado.");
+        if (navMenu.classList.contains('active')) {
+            navMenu.classList.remove('active');
+            hamburgerMenu.classList.remove('active');
+            console.log("Menu fechado após clicar em um link.");
+        }
     });
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const mainNav = document.querySelector('.main-nav');
-
-    if (hamburgerMenu && mainNav) {
-        hamburgerMenu.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-        });
-    }
 });

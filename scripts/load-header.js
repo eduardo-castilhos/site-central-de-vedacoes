@@ -6,6 +6,8 @@ async function loadHeader() {
 
         if (headerPlaceholder) {
             headerPlaceholder.innerHTML = headerHtml;
+            // Chama a função para configurar o menu após o cabeçalho ser carregado
+            setupNavMenu();
         }
     } catch (error) {
         console.error('Erro ao carregar o cabeçalho:', error);
