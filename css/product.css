@@ -1,0 +1,190 @@
+/* --- Seção de Detalhes do Produto (Geral para todos) --- */
+.product-detail-section {
+    background-color: var(--light-bg-color);
+}
+
+.product-detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.product-image-area {
+    flex: 1;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.product-info-area {
+    flex: 2;
+    min-width: 300px;
+}
+
+.product-title {
+    font-size: 2.5em;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.specifications-title {
+    font-size: 1.8em;
+    color: var(--secondary-color);
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.specifications-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.specifications-table th, .specifications-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.specifications-table th {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    font-weight: 600;
+}
+
+.specifications-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.contact-cta {
+    text-align: center;
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contact-cta p {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .product-detail-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-image-area {
+        max-width: 50%;
+        margin-top: 20px;
+    }
+    .product-info-area {
+        text-align: center;
+    }
+    .product-title {
+        font-size: 2em;
+    }
+}
+
+/* Popup Overlay - Fundo escuro */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+/* Popup Container */
+.popup-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Estado ativo do Popup */
+.popup-overlay.active {
+    display: flex;
+}
+.popup-overlay.active .popup-container {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Botão de fechar */
+.close-popup-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.close-popup-btn:hover {
+    color: #333;
+}
+
+/* Estilo para o container dos balões */
+.tables-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#tables-placeholder{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilo para os balões de links */
+.table-link {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--light-bg-color); /* Fundo cinza claro */
+    color: var(--secondary-color); /* Cor do texto */
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 20px; /* Cantos arredondados para a forma de balão */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: 500;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.table-link:hover {
+    background-color: #B30000;
+    border-color: #ccc;
+    color: var(--white-color);;
+}

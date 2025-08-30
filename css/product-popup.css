@@ -1,0 +1,67 @@
+/* Container da Tabela */
+.table-container {
+    overflow-x: auto;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo do cabeçalho do popup */
+.table-header-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.table-header-title img {
+    max-width: 200px;
+}
+
+.table-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilo principal da tabela */
+.full-spec-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.full-spec-table th, 
+.full-spec-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+/* Estilo do cabeçalho da tabela */
+.full-spec-table thead th {
+    background-color: #e60000;
+    color: white;
+    font-weight: 600;
+    border-color: #e60000;
+}
+
+/* Estilo para as colunas cinzas */
+.full-spec-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Ajustes para o corpo da tabela */
+.full-spec-table tbody td {
+    color: #555;
+}
+
+/* Estilo das células do cabeçalho */
+.full-spec-table thead tr:first-child th {
+    background-color: #920000;
+}

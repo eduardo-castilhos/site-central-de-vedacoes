@@ -1,0 +1,11 @@
+<footer class="main-footer">
+    <div class="container">
+        <p>&copy; <span id="current-year"></span> Central de Vedações. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script>
+    const yearElement = document.getElementById('current-year');
+    const currentYear = new Date().getFullYear();
+    yearElement.textContent = currentYear;
+</script>

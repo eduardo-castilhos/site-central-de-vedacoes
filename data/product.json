@@ -1,0 +1,85 @@
+{
+  "produtos": [
+    {
+      "id": "anel-oring",
+      "titulo": "Anéis O'ring",
+      "imagem": "assets/images/oring/diversos.png",
+      "descricao": "Anéis O'Ring são componentes de vedação circulares, essenciais para garantir um ajuste perfeito e evitar vazamentos. Eles podem ser usados em vedações estáticas e dinâmicas.<br><br>Disponíveis em diversos materiais e níveis de dureza, nossos anéis O'Ring são projetados para atender às necessidades específicas da sua aplicação, oferecendo durabilidade e desempenho superiores.",
+      "grupo": [
+        {
+          "titulo": "Polegadas",
+          "subgrupo": [
+            {
+              "titulo": "Alojamento Dinâmico",
+              "url": "tables/oring/alojamento-dinamico.html"
+            },
+            {
+              "titulo": "Alojamento Estático"
+            },
+            {
+              "titulo": "Dimensões 1,78"
+            },
+            {
+              "titulo": "Dimensões 2,62"
+            },
+            {
+              "titulo": "Dimensões 3,53"
+            },
+            {
+              "titulo": "Série 3 xxx"
+            },
+            {
+              "titulo": "Dimensões 5,33"
+            },
+            {
+              "titulo": "Dimensões 6,99"
+            }
+          ]
+        },
+        {
+          "titulo": "Milimétricas",
+          "subgrupo": [
+            {
+              "titulo": "Dureza 70"
+            },
+            {
+              "titulo": "Dureza 90"
+            }
+          ]
+        },
+        {
+          "titulo": "Back Up",
+          "subgrupo": [
+            {
+              "titulo": "Back Up"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fixadores",
+      "titulo": "Fixadores",
+      "imagem": "assets/images/fixadores/diversos.png",
+      "descricao": "Uma linha completa de fixadores industriais de alta resistência para as mais diversas aplicações, garantindo montagens seguras e duráveis.",
+      "tabelas": [
+        {
+          "titulo": "Tabela de Tipos",
+          "url": "tables/fixadores_types.html"
+        }
+      ]
+    },
+    {
+      "id": "gaxetas",
+      "titulo": "Gaxetas",
+      "imagem": "assets/images/gaxetas/diversos.png",
+      "descricao": "Proteção eficaz contra vazamentos e contaminantes em eixos rotativos, prolongando a vida útil de componentes mecânicos.",
+      "tabelas": [
+        {
+          "titulo": "Tabela de Tamanhos",
+          "url": "tables/retentores_sizes.html"
+        }
+      ]
+    }
+  ]
+}
